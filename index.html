@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="timestamp service">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>
+      API Basejump: Timestamp microservice
+    </h1>
+<h2>
+  User story
+    </h2>
+    <p>
+      1) I can pass a string as a parameter,<br>and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+<br>2) If it does, it returns both the Unix timestamp and the natural language form of that date.
+<br>3) If it does not contain a date or Unix timestamp, it returns null for those properties.
+    </p>
+
+<p>
+  Example usage:<br>
+  after the url <em><strong>https://timestamp-fcc-.glitch.me</strong></em> enter <em><strong>/month day year</strong></em><br>
+  or <em><strong>/timestamp</strong></em><br></p>
+<p>Example output:<br>
+{ "unix": 1450137600, "natural": "December 15, 2015" }
+</p>
+<p>
+  try me, copy/paste:<br>
+  <h4>
+  https://timestamp-fcc-.glitch.me/june 13 2012
+  </h4>
+  <h4>
+  https://timestamp-fcc-.glitch.me/1450137600
+    </h4>
+  </p>
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>!
+    </footer>
+    
+    
+    <!-- import the webpage's client-side javascript file -->
+<script src="client.js"></script>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
